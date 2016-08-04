@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+     
+		<title> KW Portfolio </title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<button class="btn" onclick="Greeting()">Hello!</button>
+		<div id="header" align="center">
+		<h1> Kathryn Willis's Girls Who Code Projects </h1>
+		</div>
+		<div id="aboutme" align="center">
+			<p> Hello! My name is Kathryn Willis and I am a 17 year 
+			old girl who codes. I also enjoy art, reading, 
+			various geekery, dogs, and long walks on the beach.</p>
+		</div>
+		<div id="click" align="center" onclick="moreInfo()">
+			<p> (Click me if you want to know more!)</p>
+		</div>
+ 		<div id="obamicon" align="center">
+			<figure>
+				<img src="project.jpg" alt="Obamicon Project" height="370" width="700" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+				<figcaption> Obamicon project inspired by Shepard Fairey </figcaption>
+			</figure> 
+		</div>
+
+		<div class="projects" align="center" style="max-width:1000px;position:relative">
+			<p>Other Projects:
+				<img class="slides" src="paddleball.jpg" width=1000px height=500px>
+				<img class="slides" src="bands.jpg" width=1000px height=500px> 
+				<img class="slides" src="madlibs.jpg" width=1000px height=500px>
+				<img class="slides" src="shapes.jpg" width=1000px height=500px>  
+				<img class="slides" src="hashing.jpg" width=1000px height=500px>
+				<img class="slides" src="scroller.jpg" width=1000px height=500px>
+			</p>
+			<a class="w3-btn-floating" style="position:absolute;top:45%;left:0" onclick="plusdivs(-1)">&#10094;</a>
+			<a class="w3-btn-floating" style="position:absolute;top:45%;right:0" onclick="plusdivs(+1)">&#10095;</a>
+		</div>
+		<iframe src="favoritesmap.html">
+		</iframe>
+		<script type="text/javascript" src="portfolio.js"></script>
+	</body>

@@ -1,0 +1,58 @@
+html{background-image: url("wallpaper.jpg");}
+
+h1 {
+	color: White;
+	font-family: "georgia";
+	font-size: 40px;
+}
+
+figure {
+	color: #FFF73F;
+	font-family: "verdana";
+}
+
+img {
+	border-style: solid;
+	border-color: #59CAFF;
+	border-width: 5px;
+	border-radius: 2px;
+}
+
+.projects {
+	font-family: "georgia";
+	background-color: #de213a;
+	border-style: solid;
+	border-color: #59CAFF;
+	border-width: 5px;
+	border-radius: 2px;
+	color: White;
+}
+
+#aboutme {
+	font-size: 20px;
+	color: #FFF73F;
+	font-family: "verdana";
+}
+
+#click {
+	font-family: "verdana";
+	color: #FFF73F;
+}
+
+.btn {
+	color: #B2AC1A;
+}
+
+.buttons {
+	color: White;
+}
+
+iframe {
+	width: 100%;
+	height: 500px;
+}
+
+h3 {
+	color: White;
+	font-family: "georgia";
+}

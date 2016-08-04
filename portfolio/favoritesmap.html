@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       #map {
+        width: 100%;
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>My Favorite Places in New York City</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var mapOptions = {
+          zoom: 14,
+          center: {lat: 40.7588889, lng: -73.9869444},
+          mapTypeId: 'hybrid'
+        };
+        var map = new google.maps.Map(document.getElementById('map'),
+            mapOptions);
+        var image = 'ballmarker.png';
+        var marker1 = new google.maps.Marker({
+          position: {lat: 40.7588889, lng: -73.9869444},
+          icon: image,
+          title: 'Richard Rodgers Theater'
+        });
+        marker1.setMap(map);
+        var marker2 = new google.maps.Marker({
+          position: {lat: 40.7480, lng: -74.0048},
+          icon: image,
+          title: 'The High Line'
+        });
+        marker2.setMap(map);
+        var marker3 = new google.maps.Marker({
+          position: {lat: 40.7844400, lng: -73.9577800},
+          icon: image,
+          title: 'The Cooper Hewitt'
+        });
+        marker3.setMap(map)
+        var marker4 = new google.maps.Marker({
+          position: {lat: 40.7459, lng: -73.9997},
+          icon: image,
+          title: 'SVA Theater'
+        });
+        marker4.setMap(map)
+        var marker5 = new google.maps.Marker({
+          position: {lat: 40.709640, lng: -74.007056},
+          icon: image,
+          title: 'Baked by Melissa'
+        });
+        marker5.setMap(map)
+        var marker6 = new google.maps.Marker({
+          position: {lat: 40.723819, lng: -74.004312},
+          icon: image,
+          title: 'Blacktap'
+        });
+        marker6.setMap(map)
+        var marker7 = new google.maps.Marker({
+          position: {lat: 40.725707, lng: -74.001216},
+          icon: image,
+          title: 'Moleskine Store'
+        });
+        marker7.setMap(map)
+      }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?callback=initMap">
+    </script>
+  </body>
+</html>

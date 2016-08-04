@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+       #map {
+        width: 100%;
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+            center: {lat: 40.7588889, lng: -73.9869444},
+            zoom: 14
+        });
+        var marker = new google.maps.Marker({
+          position: {lat: 40.7588889, lng: -73.9869444},
+          title: 'Richard Rodgers Theater'
+        });
+        marker.setMap(map);
+      }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?callback=initMap">
+    </script>
+  </body>
+</html>
